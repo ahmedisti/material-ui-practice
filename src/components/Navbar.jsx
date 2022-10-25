@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import { HdrAuto, Mail } from "@mui/icons-material";
-import { AppBar, Badge, Box, InputBase, Toolbar, Typography } from "@mui/material";
+import { HdrAuto, Mail, Notifications } from "@mui/icons-material";
+import { AppBar, Avatar, Badge, Box, InputBase, Toolbar, Typography } from "@mui/material";
 // import { borderRadius } from "@mui/system";
 import React from "react";
 const StyledToolbar = styled(Toolbar)({
@@ -34,8 +34,13 @@ const Navbar = () => {
         <Icons>
             <Badge badgeContent={4} color="error">
   <Mail />
-</Badge></Icons>
-      </StyledToolbar>{" "}
+</Badge>
+<Badge badgeContent={4} color="error">
+  <Notifications />
+</Badge>
+<Avatar sx={{width:30,height:30}} src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+</Icons>
+      </StyledToolbar>
     </AppBar>
   );
 };
