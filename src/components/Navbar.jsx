@@ -1,4 +1,4 @@
-import { HdrAuto, Mail, Notifications } from "@mui/icons-material";
+import { Mail, Notifications, SportsSoccer } from "@mui/icons-material";
 import {
   AppBar,
   Avatar,
@@ -50,7 +50,7 @@ const Navbar = () => {
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
           TechBall
         </Typography>
-        <HdrAuto sx={{ display: { xs: "block", sm: "none" } }} />
+        <SportsSoccer sx={{ display: { xs: "block", sm: "none" } }} />
         <Search>
           <InputBase placeholder="search..." />
         </Search>
